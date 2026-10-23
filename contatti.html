@@ -32,6 +32,26 @@
   <p>Telefono: <a href="tel:+390331637640">+39 0331 637 640</a></p>
   <p>E-mail: <a href="mailto:info@futuraimballaggi.it">info@futuraimballaggi.it</a></p>
   <p class="sede"><strong>Sede legale e operativa</strong><br>Via Bonsignora, 36 - Busto Arsizio, 21052</p>
+
+  <form class="modulo" action="https://formsubmit.co/info@futuraimballaggi.it" method="POST">
+    <h3>Richiedi informazioni o un preventivo</h3>
+    <input type="hidden" name="_subject" value="Nuova richiesta dal sito futuraimballaggi.it">
+    <input type="hidden" name="_template" value="table">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_next" value="https://www.futuraimballaggi.it/grazie.html">
+    <input type="text" name="_honey" class="nascosto" tabindex="-1" autocomplete="off">
+    <div class="riga">
+      <label>Nome e cognome *<input type="text" name="Nome" required autocomplete="name"></label>
+      <label>Azienda<input type="text" name="Azienda" autocomplete="organization"></label>
+    </div>
+    <div class="riga">
+      <label>Email *<input type="email" name="email" required autocomplete="email"></label>
+      <label>Telefono<input type="tel" name="Telefono" autocomplete="tel"></label>
+    </div>
+    <label>Messaggio *<textarea name="Messaggio" rows="6" required placeholder="Tipo di imballaggio, misure, quantità..."></textarea></label>
+    <label class="privacy"><input type="checkbox" name="Consenso privacy" value="Sì" required> Acconsento al trattamento dei miei dati personali per essere ricontattato, ai sensi del Reg. UE 2016/679 (GDPR).</label>
+    <button type="submit" class="btn">Invia richiesta</button>
+  </form>
 </section>
 
 <section class="certificazioni piccolo">

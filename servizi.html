@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Servizi – La Nuova Futura Imballaggi</title>
+<meta name="description" content="Progettazione personalizzata, realizzazione e montaggio di imballaggi industriali in legno, presso il nostro stabilimento o dal cliente, con consegne a mezzo nostro.">
+<link rel="icon" href="assets/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Exo:wght@300;400;600;700&family=Raleway:wght@300;400;700&family=Poppins:wght@700&family=Montserrat:wght@400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header" id="header">
+  <div class="wrap">
+    <a class="logo" href="index.html"><img src="assets/logo.png" alt="Futura Imballaggi"></a>
+    <button class="burger" aria-label="Menu" onclick="document.getElementById('header').classList.toggle('aperto')"><span></span></button>
+    <nav class="nav">
+      <a href="index.html">Azienda</a>
+      <a href="prodotti.html">Prodotti</a>
+      <a href="servizi.html" class="attivo">Servizi</a>
+      <a href="contatti.html">Contatti</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero-pagina stabilimento"><h1>SERVIZI</h1></section>
+
+<section class="servizi-pagina">
+  <p class="testo">Tutti i nostri imballaggi industriali, vengono realizzati con la massima serietà, utilizzando materie<br>prime adeguate. La cura e la sicurezza dei vostri prodotti, sono la nostra più<br>votata politica aziendale<br>Le esigenze dei nostri clienti, sono per noi un imprescindibile dovere, motivato al fine di offrire un sempre rinnovato e puntuale servizio.<br>Il nostro ufficio tecnico preposto, offre un servizio di progettazione di alto livello, totalmente<br>personalizzato. Seguono una successiva e curata realizzazione dei manufatti di<br>ogni genere e per ogni tipo di imballaggio.<br>Il montaggio delle strutture e i relativi imballaggi, possono essere eseguiti presso il nostro stabilimento, oppure all’occorrenza lavorati presso il domicilio del cliente stesso.<br>Effettuiamo le consegne a mezzo<br>nostro, per garantire puntualità ed efficienza</p>
+  <div class="carosello">
+    <div class="slide"><img src="assets/servizi-01.jpg" alt="Lavorazioni La Nuova Futura Imballaggi 1"></div>
+    <div class="slide"><img src="assets/servizi-02.jpg" alt="Lavorazioni La Nuova Futura Imballaggi 2" loading="lazy"></div>
+    <div class="slide"><img src="assets/servizi-03.jpg" alt="Lavorazioni La Nuova Futura Imballaggi 3" loading="lazy"></div>
+    <div class="slide"><img src="assets/servizi-04.jpg" alt="Lavorazioni La Nuova Futura Imballaggi 4" loading="lazy"></div>
+    <div class="slide"><img src="assets/servizi-05.jpg" alt="Lavorazioni La Nuova Futura Imballaggi 5" loading="lazy"></div>
+    <button class="freccia prev" aria-label="Precedente">&#10094;</button>
+    <button class="freccia next" aria-label="Successiva">&#10095;</button>
+    <div class="punti"></div>
+  </div>
+</section>
+<footer class="footer">Copyright © 2024 La Nuova Futura Imballaggi. All rights reserved.</footer>
+<script>
+(function(){var s=document.querySelectorAll('.carosello .slide'),p=document.querySelector('.carosello .punti'),i=0,t;
+s.forEach(function(_,k){var b=document.createElement('button');b.setAttribute('aria-label','Foto '+(k+1));b.onclick=function(){vai(k);};p.appendChild(b);});
+function vai(n){s[i].classList.remove('attiva');p.children[i].classList.remove('attivo');i=(n+s.length)%s.length;s[i].classList.add('attiva');p.children[i].classList.add('attivo');clearInterval(t);t=setInterval(function(){vai(i+1);},4000);}
+document.querySelector('.carosello .prev').onclick=function(){vai(i-1);};document.querySelector('.carosello .next').onclick=function(){vai(i+1);};vai(0);})();
+</script>
+</body>
+</html>
